@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "Z:\\SmartHouse\\SmartHouse\\",
+  "WorkspaceRootPath": "C:\\Users\\gabriele.tumaini\\Desktop\\ProgettiInformatica\\smarthouse-pighini_tumaini\\SmartHouse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DB69F04-4482-D540-ECE7-2023BD32A65B}|src\\SmartHouse.Domain\\SmartHouse.Domain.csproj|z:\\smarthouse\\smarthouse\\src\\smarthouse.domain\\lamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1DB69F04-4482-D540-ECE7-2023BD32A65B}|src\\SmartHouse.Domain\\SmartHouse.Domain.csproj|c:\\users\\gabriele.tumaini\\desktop\\progettiinformatica\\smarthouse-pighini_tumaini\\smarthouse\\src\\smarthouse.domain\\lamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DB69F04-4482-D540-ECE7-2023BD32A65B}|src\\SmartHouse.Domain\\SmartHouse.Domain.csproj|solutionrelative:src\\smarthouse.domain\\lamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Z:\\SmartHouse\\SmartHouse\\SmartHouse.Domain\\Lamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartHouse.Domain\\Lamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A3D5028-FD0D-41B0-9F4F-C942BA1BD140}|test\\BlaisePascal.SmarthouseTest\\BlaisePascal.SmarthouseTest.csproj|c:\\users\\gabriele.tumaini\\desktop\\progettiinformatica\\smarthouse-pighini_tumaini\\smarthouse\\test\\blaisepascal.smarthousetest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A3D5028-FD0D-41B0-9F4F-C942BA1BD140}|test\\BlaisePascal.SmarthouseTest\\BlaisePascal.SmarthouseTest.csproj|solutionrelative:test\\blaisepascal.smarthousetest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Lamp.cs",
-              "DocumentMoniker": "Z:\\SmartHouse\\SmartHouse\\src\\SmartHouse.Domain\\Lamp.cs",
-              "RelativeDocumentMoniker": "src\\SmartHouse.Domain\\Lamp.cs",
-              "ToolTip": "Z:\\SmartHouse\\SmartHouse\\src\\SmartHouse.Domain\\Lamp.cs",
-              "RelativeToolTip": "src\\SmartHouse.Domain\\Lamp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\gabriele.tumaini\\Desktop\\ProgettiInformatica\\smarthouse-pighini_tumaini\\SmartHouse\\test\\BlaisePascal.SmarthouseTest\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "test\\BlaisePascal.SmarthouseTest\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\gabriele.tumaini\\Desktop\\ProgettiInformatica\\smarthouse-pighini_tumaini\\SmartHouse\\test\\BlaisePascal.SmarthouseTest\\UnitTest1.cs",
+              "RelativeToolTip": "test\\BlaisePascal.SmarthouseTest\\UnitTest1.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T09:45:22.531Z",
+              "WhenOpened": "2025-10-31T07:08:49.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Lamp.cs",
-              "DocumentMoniker": "Z:\\SmartHouse\\SmartHouse\\SmartHouse.Domain\\Lamp.cs",
-              "RelativeDocumentMoniker": "SmartHouse.Domain\\Lamp.cs",
-              "ToolTip": "Z:\\SmartHouse\\SmartHouse\\SmartHouse.Domain\\Lamp.cs",
-              "RelativeToolTip": "SmartHouse.Domain\\Lamp.cs",
+              "DocumentMoniker": "C:\\Users\\gabriele.tumaini\\Desktop\\ProgettiInformatica\\smarthouse-pighini_tumaini\\SmartHouse\\src\\SmartHouse.Domain\\Lamp.cs",
+              "RelativeDocumentMoniker": "src\\SmartHouse.Domain\\Lamp.cs",
+              "ToolTip": "C:\\Users\\gabriele.tumaini\\Desktop\\ProgettiInformatica\\smarthouse-pighini_tumaini\\SmartHouse\\src\\SmartHouse.Domain\\Lamp.cs",
+              "RelativeToolTip": "src\\SmartHouse.Domain\\Lamp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T09:40:52.452Z"
+              "WhenOpened": "2025-10-29T09:45:22.531Z",
+              "EditorCaption": ""
             }
           ]
         }
