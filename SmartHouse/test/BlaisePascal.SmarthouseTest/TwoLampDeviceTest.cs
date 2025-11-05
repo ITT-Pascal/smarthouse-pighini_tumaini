@@ -20,7 +20,7 @@ namespace BlaisePascal.SmartHouse.Domain.UnitTest
         public void TwoLampDevice_TurnOffOneLamp_SetsIsOnToFalse()
         {
             TwoLampDevice device = new TwoLampDevice();
-            device.TurnBothOn();
+            device.TurnBothLampsOn();
             device.TurnOffOneLamp(device.lamp1);
             Assert.False(device.lamp1.IsOn);
             Assert.True(device.lamp2.IsOn);
@@ -30,7 +30,7 @@ namespace BlaisePascal.SmartHouse.Domain.UnitTest
         public void TwoLampDevice_TurnOnBothLamps_SetsIsOnToTrue()
         {
             TwoLampDevice device = new TwoLampDevice();
-            device.TurnBothOn();
+            device.TurnBothLampsOn();
             Assert.True(device.lamp1.IsOn);
             Assert.True(device.lamp2.IsOn);
         }
@@ -38,8 +38,8 @@ namespace BlaisePascal.SmartHouse.Domain.UnitTest
         public void TwoLampDevice_TurnOffBothLamps_SetsIsOnToFalse()
         {
             TwoLampDevice device = new TwoLampDevice();
-            device.TurnBothOn();
-            device.TurnBothOff();
+            device.TurnBothLampsOn();
+            device.TurnBothLampsOff();
             Assert.False(device.lamp1.IsOn);
             Assert.False(device.lamp2.IsOn);
         }
@@ -47,7 +47,7 @@ namespace BlaisePascal.SmartHouse.Domain.UnitTest
         public void TwoLampDevice_SetBothSameBrightness_SetsBrightnessLevel()
         {
             TwoLampDevice device = new TwoLampDevice();
-            device.SetBothSameBrightness(70);
+            device.SetBothLampsSameBrightness(70);
             Assert.Equal(70, device.lamp1.BrightnessLevel);
             Assert.Equal(70, device.lamp2.BrightnessLevel);
         }
@@ -55,7 +55,7 @@ namespace BlaisePascal.SmartHouse.Domain.UnitTest
         public void TwoLampDevice_SetOneBrightness_SetsBrightnessLevel()
         {
             TwoLampDevice device = new TwoLampDevice();
-            device.SetOneBrightness(device.lamp1, 30);
+            device.SetOneLampBrightness(device.lamp1, 30);
             Assert.Equal(30, device.lamp1.BrightnessLevel);
         }
 

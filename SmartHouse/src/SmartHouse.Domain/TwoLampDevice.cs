@@ -29,13 +29,13 @@ namespace BlaisePascal.SmartHouse.Domain
             currentLamp.TurnOff();
         }
 
-        public void TurnBothOn()
+        public void TurnBothLampsOn()
         {
             lamp1.TurnOn();
             lamp2.TurnOn();
         }
 
-        public void TurnBothOff()
+        public void TurnBothLampsOff()
         {
             lamp1.TurnOff();
             lamp2.TurnOff();
@@ -43,12 +43,12 @@ namespace BlaisePascal.SmartHouse.Domain
 
 
 
-        public void SetOneBrightness(Lamp currentLamp, int newBrightness)
+        public void SetOneLampBrightness(Lamp currentLamp, int newBrightness)
         {
             currentLamp.SetBrightness(newBrightness);
         }
 
-        public void SetBothSameBrightness(int newBrightness)
+        public void SetBothLampsSameBrightness(int newBrightness)
         {
             lamp1.SetBrightness(newBrightness);
             lamp2.SetBrightness(newBrightness);
