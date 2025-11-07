@@ -8,9 +8,8 @@ namespace SmartHouse.Domain
 {
     public abstract class AbstractLamp
     {
-        public bool IsOn { get; protected set; }
-        public int BrightnessLevel { get; protected set; }
-        
+        public bool IsOn { get; set; }
+        public int BrightnessLevel { get; set; }
 
         public abstract void TurnOn();
         public abstract void TurnOff();
