@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 namespace SmartHouse.Domain
 {
     public class LampsRow
+
+        //TODO: fai i test
+
+
     {
         public List<AbstractLamp> Lamps { get;  private set; }
 

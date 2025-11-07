@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 namespace BlaisePascal.SmartHouse.Domain
 {
     public class TwoLampDevice
+
+        //TODO: prova a farlo con la classe astratta
+
+
     {
         //Properties
         public Lamp lamp1 { get; private set; }
@@ -40,8 +44,6 @@ namespace BlaisePascal.SmartHouse.Domain
             lamp1.TurnOff();
             lamp2.TurnOff();
         }
-
-
 
         public void SetOneLampBrightness(Lamp currentLamp, int newBrightness)
         {
