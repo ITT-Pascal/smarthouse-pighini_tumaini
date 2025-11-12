@@ -11,6 +11,7 @@ namespace SmartHouse.Domain
         public const int MaxBrightnessLevel  = 50;
         
         public bool IsPowerSaving { get; private set; }
+        
         public EcoLamp()
 
         {
@@ -26,6 +27,7 @@ namespace SmartHouse.Domain
         {
             IsOn = false;
         }
+
         public override void SetBrightness(int levelOfBrightness)
         {
             if (levelOfBrightness < 0 || levelOfBrightness > MaxBrightnessLevel)

@@ -23,10 +23,12 @@ namespace SmartHouse.Domain
         {
             Lamps.Add(LampToAdd);
         }
+
         public void AddLamp(AbstractLamp LampToAdd, int position)
         {
             Lamps[position] = LampToAdd;
         }
+        
         public void AddEcoLamp(AbstractLamp EcoLampToAdd)
         {
             Lamps.Add(EcoLampToAdd);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SmartHouse.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,52 +9,54 @@ namespace BlaisePascal.SmartHouse.Domain
 {
     public class TwoLampDevice
 
-        //TODO: prova a farlo con la classe astratta
-
-
     {
         //Properties
-        public Lamp lamp1 { get; private set; }
-        public Lamp lamp2 { get; private set; }
+        public AbstractLamp Lamp1 { get; private set; }
+        public AbstractLamp Lamp2 { get; private set; }
 
         //Constructor
-        public TwoLampDevice()
+        public TwoLampDevice(AbstractLamp lamp1, AbstractLamp lamp2)
         {
-            lamp1 = new Lamp();
-            lamp2 = new Lamp();
+            Lamp1 = lamp1;
+            Lamp2 = lamp2;
+
+            Lamp1.IsOn = false;
+            Lamp2.IsOn = false;
         }
 
+        //Methods
 
-        public void TurnOnOneLamp(Lamp currentLamp)
+        public void TurnOnOneLamp(AbstractLamp currentLamp)
         {
             currentLamp.TurnOn();
         }
-        public void TurnOffOneLamp(Lamp currentLamp)
+
+        public void TurnOffOneLamp(AbstractLamp currentLamp)
         {
             currentLamp.TurnOff();
         }
 
         public void TurnBothLampsOn()
         {
-            lamp1.TurnOn();
-            lamp2.TurnOn();
+            Lamp1.TurnOn();
+            Lamp2.TurnOn();
         }
 
         public void TurnBothLampsOff()
         {
-            lamp1.TurnOff();
-            lamp2.TurnOff();
+            Lamp1.TurnOff();
+            Lamp2.TurnOff();
         }
 
-        public void SetOneLampBrightness(Lamp currentLamp, int newBrightness)
+        public void SetOneLampBrightness(AbstractLamp currentLamp, int newBrightness)
         {
             currentLamp.SetBrightness(newBrightness);
         }
 
         public void SetBothLampsSameBrightness(int newBrightness)
         {
-            lamp1.SetBrightness(newBrightness);
-            lamp2.SetBrightness(newBrightness);
+            Lamp1.SetBrightness(newBrightness);
+            Lamp2.SetBrightness(newBrightness);
         }
     }
 }
