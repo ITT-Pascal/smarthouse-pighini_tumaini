@@ -10,11 +10,10 @@ namespace BlaisePascal.SmartHouse.Domain
     public class TwoLampDevice
 
     {
-        //Properties
         public AbstractLamp Lamp1 { get; private set; }
         public AbstractLamp Lamp2 { get; private set; }
 
-        //Constructor
+
         public TwoLampDevice(AbstractLamp lamp1, AbstractLamp lamp2)
         {
             Lamp1 = lamp1;
@@ -23,8 +22,6 @@ namespace BlaisePascal.SmartHouse.Domain
             Lamp1.IsOn = false;
             Lamp2.IsOn = false;
         }
-
-        //Methods
 
         public void TurnOnOneLamp(AbstractLamp currentLamp)
         {

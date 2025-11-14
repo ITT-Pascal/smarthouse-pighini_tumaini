@@ -8,11 +8,6 @@ namespace BlaisePascal.SmarthouseTest
 {
     public class LampsRowTest
     {
-        /*[Fact]
-        public void LampsRow_SwitchAllOn_SetsIsOnToTrueForAllLamps()
-        {
-            LampsRowTest lampsRow = new LampsRowTest();
-
-        }*/
+        //TODO: Fai i test
     }
 }

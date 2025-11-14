@@ -28,23 +28,35 @@ namespace SmartHouse.Domain
         {
             Lamps[position] = LampToAdd;
         }
-        
-        public void AddEcoLamp(AbstractLamp EcoLampToAdd)
+
+        public void RemoveLamp()
         {
-            Lamps.Add(EcoLampToAdd);
+            Lamps.Remove(Lamps[0]);
         }
 
-        public void AddEcoLamp(AbstractLamp EcoLampToAdd, int position)
+        public void RemoveLamp(int position)
         {
-            Lamps[position] = EcoLampToAdd;
+            Lamps.RemoveAt(position);
+        }
+
+        public void SetAllBrightness(int brightness)
+        {
+            for (int i = 0; i < Lamps.Count; i++)
+            {
+                Lamps[i].SetBrightness(brightness);
+            }
+        }
+
+        public void SetBrightness(int brightness, int position)
+        {
+            Lamps[position].SetBrightness(brightness);
         }
 
         public void SwitchAllOn()
         {
             for (int i = 0; i < Lamps.Count; i++)
             {
-                AbstractLamp lamp = Lamps[i];
-                lamp.TurnOn();
+                Lamps[i].TurnOn();
             }
         }
 
@@ -52,22 +64,19 @@ namespace SmartHouse.Domain
         {
             for (int i = 0; i < Lamps.Count; i++)
             {
-                AbstractLamp lamp = Lamps[i];
-                lamp.TurnOff();
+                Lamps[i].TurnOff();
             }
         }
 
         public void SwitchLamp(int position)
         {
-            AbstractLamp lamp = Lamps[position];
-            
-            if (lamp.IsOn == true)
+            if (Lamps[position].IsOn == true)
             {
-                lamp.TurnOff();
+                Lamps[position].TurnOff();
             }
             else 
             {
-                lamp.TurnOn();
+                Lamps[position].TurnOn();
             }
         }
     }
